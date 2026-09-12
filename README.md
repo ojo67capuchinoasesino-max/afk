@@ -1,0 +1,2 @@
+# afk
+SIMULADOR FISICA

@@ -1,0 +1,4 @@
+## 2026-09-12 - Accessibility for Paired Sliders and Icon Buttons in Pre-Rendered Apps
+
+**Learning:** In dual-control input groups (paired `<input type="number">` and `<input type="range">`), omitting `aria-label` attributes on sliders leaves assistive technology users unable to identify the control's purpose when traversing sliders directly. Furthermore, standalone icon-only action buttons relying solely on `title` attributes lack reliable accessible naming across various screen reader software. Setting the document language correctly (`lang="es"`) is also necessary to prevent mispronunciation of localized Spanish interface text.
+**Action:** When designing or maintaining paired input widgets and icon controls in static single-file web apps, provide explicit `aria-label` attributes on both range sliders and trigger buttons, and verify the document `<html lang="...">` declaration matches the interface language.
